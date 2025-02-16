@@ -94,7 +94,7 @@ public class ControladorProducto extends HttpServlet {
 			    List<TblProductosusti> listadoProductos = crudimp.ListadoProducto();
 			    request.setAttribute("listado", listadoProductos);
 				//redireccionamos hacia la vista (.jsp)
-				request.getRequestDispatcher("/Main.jsp").forward(request,response);
+				request.getRequestDispatcher("/FrmRegistrarProducto.jsp").forward(request,response);
 			}//fin del switch
 		}
 	} //fin del metodo doGet
